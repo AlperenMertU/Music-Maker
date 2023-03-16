@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body{
+  padding-bottom: 22px;
+}
+a {
+  color: black;
+  cursor: pointer;
+}
+h2{
+  font-family:'Kanit'; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding-top:60px; 
+  font-size: 50px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .background {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(55, 206, 226, 1);
+    width: 1000px;
+    height: 680px;
+    outline: rgba(166, 106, 212, 1) solid 2px;
+    .layers {
+      z-index: 999;
+      position: absolute;
+      text-align: center;
+      justify-content: center;
+      .volume-slider{
+        transform: translateX(20);
+      }
+      .title {
+        font-family: "Moulpali", cursive;
+        position: relative;
+        padding-top: 100px;
+        font-size: 20px;
+        color: transparent;
+        text-shadow: 0 0 3px #000;
+        .opacity {
+          opacity: 0;
+          width: 300px;
+        }
+      }
+      .fa-gear {
+        z-index: 999;
+        position: absolute;
+        right: 0px;
+      }
+      .fa-play {
+        z-index: 999;
+        position: absolute;
+        right: 20px;
+      }
+      .active {
+        width: 30px;
+        opacity: 0;
+      }
+      .eqo {
+        position: relative;
+        bottom: 90px;
+        margin-bottom: 220px;
+        margin: 0;
+        height: 0px;
+        
+
+
+        .slider-container {
+          width: 50%;
+          margin: 0 auto;
+          text-align: center;
+        }
+        
+        .slider {
+          width: 100%;
+          height: 15px;
+          border-radius: 5px;  
+          background: #ddd;
+          outline: none;
+          opacity: 0.7;
+          -webkit-transition: .2s;
+          transition: opacity .2s;
+        }
+        
+        .slider:hover {
+          opacity: 1;
+        }
+        
+        .slider::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%; 
+          background: #4CAF50;
+          cursor: pointer;
+        }
+        
+        .slider::-moz-range-thumb {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background: #4CAF50;
+          cursor: pointer;
+        }
+        
+
+
+
+        
+      }
+      .eqoB {
+        position: relative;
+        bottom: 90px;
+        margin-bottom: 220px;
+        margin: 0;
+        height: 0px;
+      }
+    }
+    .mainColor {
+      .backColor {
+        margin-top: 40px;
+        background-color: rgba(97, 0, 255, 0.27);
+        border-radius: 50%;
+        width: 450px;
+        height: 450px;
+      }
+    }
+  }
+
+  .effects {
+    background-color: rgba(40, 52, 187, 0.473);
+    position: absolute;
+    width: 1000px;
+    height: 680px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .audio-list {
+      font-family: "Moulpali", cursive;
+
+      padding: 0 0 0 15px;
+      .audio {
+        padding: 27px;
+      }
+    }
+
+    .audio-board {
+      z-index: 999;
+      width: 100%;
+      height: 0%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      .play-btn {
+        cursor: pointer;
+        background-color: rgb(255, 27, 27);
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        right: 20px;
+        bottom: 90px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+      }
+      .btn {
+        border-radius: 50%;
+    
+      }
+      .play {
+        display: block;
+        opacity: 1;
+      
+      }
+  
+      .stop {
+        display: none;
+
+      }
+      
+      .not-active {
+        &:hover {
+          cursor: default;
+        }
+      }
+
+      .column {
+        padding: 11px 0 10px 45px;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+
+        .square {
+          border-radius: 50%;
+
+          width: 55px;
+          height: 55px;
+          transition: all 0.2s;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .active-btn {
+          transform: scale(1.26);
+        }
+
+        .kick {
+          background-color: #cde800;
+          opacity: 0.3;
+        }
+
+        .boom {
+          background-color: #ff962e;
+          opacity: 0.3;
+        }
+
+        .snare {
+          background-color: #1d56b8;
+          opacity: 0.3;
+        }
+        .play {
+          opacity: 1;
+        }
+      }
+
+    }
+  }
+}
+

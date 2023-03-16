@@ -1,0 +1,211 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding-bottom: 22px;
+}
+
+a {
+  color: black;
+  cursor: pointer;
+}
+
+h2 {
+  font-family: "Kanit";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  font-size: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container .background {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(55, 206, 226);
+  width: 1000px;
+  height: 680px;
+  outline: rgb(166, 106, 212) solid 2px;
+}
+.container .background .layers {
+  z-index: 999;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+}
+.container .background .layers .volume-slider {
+  transform: translateX(20);
+}
+.container .background .layers .title {
+  font-family: "Moulpali", cursive;
+  position: relative;
+  padding-top: 100px;
+  font-size: 20px;
+  color: transparent;
+  text-shadow: 0 0 3px #000;
+}
+.container .background .layers .title .opacity {
+  opacity: 0;
+  width: 300px;
+}
+.container .background .layers .fa-gear {
+  z-index: 999;
+  position: absolute;
+  right: 0px;
+}
+.container .background .layers .fa-play {
+  z-index: 999;
+  position: absolute;
+  right: 20px;
+}
+.container .background .layers .active {
+  width: 30px;
+  opacity: 0;
+}
+.container .background .layers .eqo {
+  position: relative;
+  bottom: 90px;
+  margin-bottom: 220px;
+  margin: 0;
+  height: 0px;
+}
+.container .background .layers .eqo .slider-container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.container .background .layers .eqo .slider {
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.container .background .layers .eqo .slider:hover {
+  opacity: 1;
+}
+.container .background .layers .eqo .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+.container .background .layers .eqo .slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+.container .background .layers .eqoB {
+  position: relative;
+  bottom: 90px;
+  margin-bottom: 220px;
+  margin: 0;
+  height: 0px;
+}
+.container .background .mainColor .backColor {
+  margin-top: 40px;
+  background-color: rgba(97, 0, 255, 0.27);
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+}
+.container .effects {
+  background-color: rgba(40, 52, 187, 0.473);
+  position: absolute;
+  width: 1000px;
+  height: 680px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container .effects .audio-list {
+  font-family: "Moulpali", cursive;
+  padding: 0 0 0 15px;
+}
+.container .effects .audio-list .audio {
+  padding: 27px;
+}
+.container .effects .audio-board {
+  z-index: 999;
+  width: 100%;
+  height: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.container .effects .audio-board .play-btn {
+  cursor: pointer;
+  background-color: rgb(255, 27, 27);
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 90px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.container .effects .audio-board .btn {
+  border-radius: 50%;
+}
+.container .effects .audio-board .play {
+  display: block;
+  opacity: 1;
+}
+.container .effects .audio-board .stop {
+  display: none;
+}
+.container .effects .audio-board .not-active:hover {
+  cursor: default;
+}
+.container .effects .audio-board .column {
+  padding: 11px 0 10px 45px;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.container .effects .audio-board .column .square {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  transition: all 0.2s;
+}
+.container .effects .audio-board .column .square:hover {
+  cursor: pointer;
+}
+.container .effects .audio-board .column .active-btn {
+  transform: scale(1.26);
+}
+.container .effects .audio-board .column .kick {
+  background-color: #cde800;
+  opacity: 0.3;
+}
+.container .effects .audio-board .column .boom {
+  background-color: #ff962e;
+  opacity: 0.3;
+}
+.container .effects .audio-board .column .snare {
+  background-color: #1d56b8;
+  opacity: 0.3;
+}
+.container .effects .audio-board .column .play {
+  opacity: 1;
+}/*# sourceMappingURL=stlye.css.map */

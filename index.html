@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styling/stlye.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+  <title>Music Maker</title>
+</head>
+
+<body>
+  <h2>
+    Music Maker</h2>
+  <div class="container">
+    <div class="background">
+      
+<div class="slider-container">
+</div>
+
+      <div class="layers">
+
+        <div id="drop" class="title">
+          <p class="metin">Add Sound</p>
+        </div>
+
+        <div class="eqo">
+          <div class="col" value="on">
+            
+          </div>
+        
+        </div>
+
+        <div class="buttons">
+          <a id="settings" href="#"><i class="fa-solid fa-gear fa-2"></i></a>
+          <a href="#" onclick=wavesurfer.playPause()><i class="fa-solid fa-play fa-2"></i></a>
+        </div>
+        <div class="voice" id="waveform"></div>
+        <hr style="width: 700px;">
+
+        <div id="drop2" class="title">
+          <p class="metin2">Add Sound</p>
+        </div>
+
+        <div class="eqoB">
+          <div class="colB" value="on"></div>
+        </div>
+        <div class="buttonsB">
+          <a id="settingsB" href="#"><i class="fa-solid fa-gear fa-2"></i></a>
+          <a href="#" onclick=wavesurfer2.playPause()><i class="fa-solid fa-play fa-2"></i></a>
+        </div>
+        <div class="voice" id="waveform2"></div>
+
+
+
+
+        <hr style="width: 700px;">
+
+      </div>
+
+
+      <div class="mainColor">
+        <div class="backColor"></div>
+      </div>
+
+      <div class="effects">
+        <div class="audio-list">
+          <div class="audio snare-btn">
+            <p>Snare</p>
+            <audio id="sAudio">
+              <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1147877/snare.wav">
+              </source>
+            </audio>
+          </div>
+
+          <div class="audio kick-btn">
+            <p>Kick</p>
+            <audio id="kAudio">
+              <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1147877/kick.wav">
+              </source>
+            </audio>
+          </div>
+
+          <div class="audio boom-btn">
+            <p>Boom</p>
+            <audio id="bAudio">
+              <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1147877/boom.wav">
+              </source>
+            </audio>
+          </div>
+        </div>
+         
+        <div class="audio-board">
+          <div class="play-btn">
+            <div id="play" class="btn play" onclick="play();"><i class="fa fa-play fa-xl"></i></div>
+            <div id="stop" class="btn stop" onClick="stop();"><i class="fa fa-stop fa-xl"></i></div>
+          </div>
+          <div class="snareColumn column">
+            <div class="square snare snare1"></div>
+            <div class="square snare snare2"></div>
+            <div class="square snare snare3"></div>
+            <div class="square snare snare4"></div>
+            <div class="square snare snare5"></div>
+            <div class="square snare snare6"></div>
+            <div class="square snare snare7"></div>
+            <div class="square snare snare8"></div>
+            <div class="square snare snare9"></div>
+            <div class="square snare snare10"></div>
+            <div class="square snare snare11"></div>
+          </div>
+          <div class="boomColumn column">
+            <div class="square boom boom1"></div>
+            <div class="square boom boom2"></div>
+            <div class="square boom boom3"></div>
+            <div class="square boom boom4"></div>
+            <div class="square boom boom5"></div>
+            <div class="square boom boom6"></div>
+            <div class="square boom boom7"></div>
+            <div class="square boom boom8"></div>
+            <div class="square boom boom9"></div>
+            <div class="square boom boom10"></div>
+            <div class="square boom boom11"></div>
+          </div>
+          <div class="kickColumn column">
+            <div class="square kick kick1"></div>
+            <div class="square kick kick2"></div>
+            <div class="square kick kick3"></div>
+            <div class="square kick kick4"></div>
+            <div class="square kick kick5"></div>
+            <div class="square kick kick6"></div>
+            <div class="square kick kick7"></div>
+            <div class="square kick kick8"></div>
+            <div class="square kick kick9"></div>
+            <div class="square kick kick10"></div>
+            <div class="square kick kick11"></div>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+  </div>
+</body>
+<script src="https://unpkg.com/wavesurfer.js@4.2.0/dist/wavesurfer.js"></script>
+
+<script src="/JavaScript/LayerA.js"></script>
+<script src="/JavaScript/LayerB.js"></script>
+<script src="/JavaScript/Effect.js"></script>
+
+</html>
