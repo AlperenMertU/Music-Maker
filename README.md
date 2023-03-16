@@ -4,7 +4,8 @@
 Just Take a code and open in the browser.
 
 ## How To Work ? 
-[![Everything Is AWESOME](https://img.youtube.com/vi/2zg7pOP6QLw/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
+This is Yotube video, click and go my videos I explain
+https://www.youtube.com/watch?v=2zg7pOP6QLw
 
 
 
