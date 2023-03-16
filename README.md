@@ -8,4 +8,4 @@ https://www.youtube.com/watch?v=2zg7pOP6QLw<VIDEO ID>
 
 
 ## How It Looks Like ? 
-![İMG](img/bb.png "İMG")
+![İMG](imgs/bb.png "İMG")
